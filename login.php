@@ -1,6 +1,18 @@
 <?php
-$username="root";
-$password="aniket@2004";
-$server='localhost:3306';
-$db='alumni_connect';
+function OpenCon()
+ {
+ $dbhost = "localhost:3307";
+ $dbuser = "root";
+ $dbpass = "";
+ $db = "alumni_connect";
+ $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
+ 
+ return $conn;
+ }
+ 
+function CloseCon($conn)
+ {
+ $conn -> close();
+ }
+   
 ?>

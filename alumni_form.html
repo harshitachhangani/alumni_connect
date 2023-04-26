@@ -187,7 +187,7 @@
     <div class="container">
         <header>Alumni Registration</header>
 
-        <form action="#">
+        <form method="POST" action="alumni_form.php">
             <div class="form first">
                 <div class="details personal">
                     <span class="title">Personal Details</span>
@@ -195,37 +195,37 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>Full Name</label>
-                            <input type="text" placeholder="Enter your name" required>
+                            <input id="alumni_name" name="alumni_name" type="text" placeholder="Enter your name" required>
                         </div>
 
                         <div class="input-field">
                             <label>Username</label>
-                            <input type="text" placeholder="Enter Username" required>
+                            <input id="username" name="username" type="text" placeholder="Enter Username" required>
                         </div>
 
                         <div class="input-field">
                             <label>Email</label>
-                            <input type="text" placeholder="Enter your email" required>
+                            <input id="email" name="email" type="text" placeholder="Enter your email" required>
                         </div>
 
                         <div class="input-field">
                             <label>Password</label>
-                            <input type="password" placeholder="Enter the password" required>
+                            <input id="password" name="password" type="password" placeholder="Enter the password" required>
                         </div>
 
-                        <div class="input-field">
+                        <div  class="input-field">
                             <label>Gender</label>
-                            <select required>
+                            <select id="gender" name="gender" required>
                                 <option disabled selected>Select gender</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Others</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="others">Others</option>
                             </select>
                         </div>
 
                         <div class="input-field">
                             <label>Mobile No</label>
-                            <input type="number" placeholder="Enter Mobile No" required>
+                            <input id="mobile_no" name="mobile_no" type="number" placeholder="Enter Mobile No" required>
                         </div>
                     </div>
                 </div>
@@ -236,41 +236,41 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>Passout Year</label>
-                            <input type="number" min="1990" max="2099" step="1" value="2016" placeholder="Enter Passout Year" required /> 
+                            <input id="paasout_year" name="passout_year" type="number" min="1990" max="2099" step="1" value="2016" placeholder="Enter Passout Year" required /> 
                         </div>
 
                         <div class="input-field">
                             <label>Branch</label>
-                            <input type="text" placeholder="Enter Branch" required>
+                            <input id="branch" name="branch" type="text" placeholder="Enter Branch" required>
                         </div>
 
                         <div class="input-field">
                             <label>Skills</label>
-                            <input type="text" placeholder="Enter Skills" required>
+                            <input id="skills" name="skills" type="text" placeholder="Enter Skills" required>
                         </div>
 
                         <div class="input-field">
                             <label>Interest</label>
-                            <input type="text" placeholder="Enter your Interest" required>
+                            <input id="interest" name="interest" type="text" placeholder="Enter your Interest" required>
                         </div>
 
                         <div class="input-field">
                             <label>Location</label>
-                            <input type="text" placeholder="Enter your current Location" required>
+                            <input id="location" name="location" type="text" placeholder="Enter your current Location" required>
                         </div>
 
                         <div class="input-field">
                             <label>Current Job</label>
-                            <input type="text" placeholder="Enter current Job" required>
+                            <input id="job" name="job" type="text" placeholder="Enter current Job" required>
                         </div>
 
                         <div class="input-field">
                             <label>Your Pic</label>
-                            <input type="file" accept=".jpeg,.png,.image,.jpg" onchange="loadFile(event)" placeholder="Upload profile pic" required>
+                            <input id="pic" name="pic" type="file" accept=".jpeg,.png,.image,.jpg" onchange="loadFile(event)" placeholder="Upload profile pic" required>
                         </div>
                     </div>
 
-                    <button class="submit">
+                    <button id="submit" name ="submit" class="submit">
                         <span class="btnText">Submit</span>
                         <i class="uil uil-navigator"></i>
                     </button>
