@@ -1,7 +1,7 @@
 <?php
 function OpenCon()
  {
- $dbhost = "localhost:3307";
+ $dbhost = "localhost";
  $dbuser = "root";
  $dbpass = "";
  $db = "alumni_connect";
